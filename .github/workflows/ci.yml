@@ -37,12 +37,12 @@ jobs:
         run: cmake --build build --parallel
 
       - name: Prepare release binary
-        run: cp build/focusflowd focusflowd-linux-x86_64
+        run: cp build/focusflow focusflow-linux-x86_64
 
       - uses: actions/upload-artifact@v4
         with:
-          name: focusflowd-binary
-          path: focusflowd-linux-x86_64
+          name: focusflow-binary
+          path: focusflow-linux-x86_64
   clang-tidy:
     name: Clang-Tidy Review
     runs-on: ubuntu-latest
@@ -72,13 +72,13 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: focusflowd-binary
+          name: focusflow-binary
           path: .
 
       - name: Mark binary executable
-        run: chmod +x focusflowd-linux-x86_64
+        run: chmod +x focusflow-linux-x86_64
 
       - uses: softprops/action-gh-release@v2
         with:
-          files: focusflowd-linux-x86_64
+          files: focusflow-linux-x86_64
           generate_release_notes: true
