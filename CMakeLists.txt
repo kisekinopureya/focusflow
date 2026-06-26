@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(focusflowd)
+project(focusflow)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -26,10 +26,10 @@ set(SOURCES
 )
 
 # Create executable
-add_executable(focusflowd ${SOURCES})
+add_executable(focusflow ${SOURCES})
 
 # Link libraries
-target_link_libraries(focusflowd
+target_link_libraries(focusflow
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
@@ -39,6 +39,6 @@ target_link_libraries(focusflowd
 )
 
 # Installation
-install(TARGETS focusflowd DESTINATION bin)
-install(FILES focusflowd.desktop DESTINATION share/applications)
-install(FILES icons/hicolor/scalable/apps/focusflowd.svg DESTINATION share/icons/hicolor/scalable/apps)
+install(TARGETS focusflow DESTINATION bin)
+install(FILES focusflow.desktop DESTINATION share/applications)
+install(FILES icons/hicolor/scalable/apps/focusflow.svg DESTINATION share/icons/hicolor/scalable/apps)

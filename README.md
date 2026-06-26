@@ -36,7 +36,7 @@ Actions are stored in `~/.config/focusflow/actions.json` see `example-actions.js
 ## Running FocusFlow
 
 ```sh
-$ focusflowd
+$ focusflow
 ```
 
 Launching the application starts the embedded daemon automatically. Closing or minimizing the window hides it to the system tray, and the tray menu can restore or quit the app.
