@@ -9,7 +9,7 @@
 #include "action_manager.h"
 #include "dbus_listener.h"
 
-constexpr std::string_view version{"v0.2.0"};
+constexpr std::string_view version{"v0.2.1"};
 
 int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
